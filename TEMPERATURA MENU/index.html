@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+  <h1>Conversor de Temperatura</h1>
+  
+  <div>
+    <img src="imagem/escalas-de-temperatura.jpg"/>
+  </div>
+  <div >
+ <form>
+    <label for="temperatura">Valor da Temperatura:</label>
+    <input id="temperatura" type="number" placeholder="ex: 100"/>
+    <br />
+    <div>
+    <label for="origem">Converter de:</label>
+    <select name="origem" id="origem" >
+       <option value="fahrenheit">Fahrenheit</option>
+       <option value="celsius">Celsius</option>
+       <option value="kelvin">Kelvin</option>
+       <option value="rankine">Rankine</option>
+    </select>
+</div>
+<div>
+    <label for="destino">Para:</label>
+    <select name="destino" id="destino">
+       <option value="fahrenheit">Fahrenheit</option>
+       <option value="celsius">Celsius</option>
+       <option value="kelvin">Kelvin</option>
+       <option value="rankine">Rankine</option>
+    </select>
+    <br />
+</div>
+    <label for="resultado">Resultado Final:</label>
+    <input id="resultado" />
+    <br/>
+   </form>
+   <button type="button" onclick="converterTemperatura(event)">Converter</button>
+    </form>
+        </div>  
+        <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
